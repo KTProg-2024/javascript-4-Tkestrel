@@ -3,28 +3,66 @@
     <head>
         <title>Motion</title>
 		<style>
-			#container {
+			#container{
 			  width: 400px;
 			  height: 400px;
 			  position: relative;
-			  background: yellow;
+			  background: lightblue;
 			}
-			#animate {
+
+      #animate{
 			  width: 50px;
 			  height: 50px;
+        left: 175px;
+        top: 175px;
 			  position: absolute;
-			  background-color: red;
-			}	
+			  background-color: orange;
+			}
+
+      .orangebtn{
+			  width: 50px;
+			  height: 30px;
+        background-color: orange;
+			  position: relative;
+        left: 175px;
+      }
+
+      .ctrlbtn1{
+			  width: 50px;
+			  height: 30px;
+        background-color: pink;
+			  position: relative;
+        left: 175px;
+      }
+
+      .ctrlbtn2{
+			  width: 50px;
+			  height: 30px;
+        background-color: pink;
+			  position: relative;
+        left: 125px;
+      }
+
 		</style>
     </head>
 
 	<body>
 		<script src="motion.js"></script>	
-		<button type="button" onclick="myMove()">Click Me</button> 
+
 		<br><br>
+
 		<div id ="container">
-		  <div id ="animate"></div>
+		  <div id="animate"></div>
 		</div>
+
+    <br><br>
+    
+		<button type="button" onclick="moveUp()" class="ctrlbtn1">Up</button>
+    <br><br>
+		<button type="button" onclick="moveLeft()" class="ctrlbtn2">Left</button>
+		<button type="button" onclick="moveRight()" class="ctrlbtn1">Right</button>
+    <br><br>
+		<button type="button" onclick="moveDown()" class="ctrlbtn1">Down</button>
 		
 	</body>
 </html>
